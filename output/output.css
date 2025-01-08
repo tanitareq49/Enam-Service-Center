@@ -1690,6 +1690,11 @@ video {
     padding-bottom: 1.5rem;
   }
 
+  .\32xl\:py-8{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
   .\32xl\:text-sm{
     font-size: 0.875rem;
     line-height: 1.25rem;
