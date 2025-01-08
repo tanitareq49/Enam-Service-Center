@@ -953,10 +953,6 @@ video {
   background-color: rgb(245 245 245 / var(--tw-bg-opacity));
 }
 
-.bg-\[linear-gradient\(to_top\2c rgba\(255\2c 255\2c 255\2c 0\.1\)\2c rgba\(0\2c 0\2c 0\2c 0\.8\)\)\]{
-  background-image: linear-gradient(to top,rgba(255,255,255,0.1),rgba(0,0,0,0.8));
-}
-
 .bg-gradient-to-r{
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
@@ -1090,6 +1086,11 @@ video {
   line-height: 2.25rem;
 }
 
+.text-4xl{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .text-\[22px\]{
   font-size: 22px;
 }
@@ -1117,11 +1118,6 @@ video {
 .text-xs{
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-4xl{
-  font-size: 2.25rem;
-  line-height: 2.5rem;
 }
 
 .font-bold{
@@ -1469,19 +1465,14 @@ video {
     line-height: 2.25rem;
   }
 
-  .md\:text-4xl{
-    font-size: 2.25rem;
-    line-height: 2.5rem;
+  .md\:text-5xl{
+    font-size: 3rem;
+    line-height: 1;
   }
 
   .md\:text-sm{
     font-size: 0.875rem;
     line-height: 1.25rem;
-  }
-
-  .md\:text-5xl{
-    font-size: 3rem;
-    line-height: 1;
   }
 }
 
@@ -1588,12 +1579,12 @@ video {
     justify-content: stretch;
   }
 
-  .lg\:gap-4{
-    gap: 1rem;
-  }
-
   .lg\:gap-12{
     gap: 3rem;
+  }
+
+  .lg\:gap-4{
+    gap: 1rem;
   }
 
   .lg\:border-none{
@@ -1634,8 +1625,8 @@ video {
     line-height: 2.5rem;
   }
 
-  .lg\:text-5xl{
-    font-size: 3rem;
+  .lg\:text-6xl{
+    font-size: 3.75rem;
     line-height: 1;
   }
 
@@ -1659,11 +1650,6 @@ video {
   .lg\:text-sm{
     font-size: 0.875rem;
     line-height: 1.25rem;
-  }
-
-  .lg\:text-6xl{
-    font-size: 3.75rem;
-    line-height: 1;
   }
 
   .lg\:text-\[\#FF4136\]{
