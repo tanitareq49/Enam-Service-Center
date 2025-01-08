@@ -3,8 +3,19 @@ const navToggle = document.querySelector("#mobile-nav-toggle");
 const navBar = document.querySelector("#primary-navigation");
 
 
+
 navToggle.addEventListener("click", ()=>{
     const visibility = navBar.getAttribute("data-visible");
+    const navItem = document.querySelectorAll(".navItem");
+    
+    navItem.forEach((item)=> {
+        item.addEventListener("click", ()=>{
+            navBar.setAttribute("data-visible", "false");
+            navBar.classList.add("-translate-x-full");
+            navToggle.innerHTML = `<svg class="h-full w-full" xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="currentcolor"><path d="M120-240v-66.67h520V-240H120Zm673.33-48L600.67-480.67l192-192L840-625.33 695.33-480.67l145.34 145.34L793.33-288ZM120-448v-66.67h400V-448H120Zm0-205.33V-720h520v66.67H120Z"/>
+                </svg>`;
+        })
+    })
 
     if (visibility === 'false') {
         navBar.setAttribute("data-visible", "true");

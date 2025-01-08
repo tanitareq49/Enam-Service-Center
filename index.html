@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enam Service Center</title>
     <link rel="stylesheet" href="./output/output.css">
+    <link rel="icon" href="./assets/icons/favicon-32x32.png">
     <script src="./index.js" defer="true"></script>
 </head>
 <body class="font-fontTwo scroll-smooth"> 
@@ -19,26 +20,26 @@
                 </a>
             </div>
             <div class="bg-white lg:bg-transparent absolute lg:static top-[49px] left-0 right-0 flex flex-col lg:flex-row items-stretch lg:items-center min-h-[100vh] lg:min-h-min -translate-x-full lg:-translate-x-0 transition-transform duration-500 ease-in text-second-bg capitalize tracking-[-0.6px] text-base lg:flex-1 lg:basis-[65%] lg:justify-between" id="primary-navigation" data-visible="false">
-                <div class="border-t border-bright-yellow px-4 sm:px-6 py-8 lg:border-none lg:px-0 lg:py-0">
+                <div class="border-t border-primary-red px-4 sm:px-6 py-8 lg:border-none lg:px-0 lg:py-0">
                     <ul class="flex flex-col lg:flex-row gap-4 lg:items-center">
-                        <li><a href="#service" class="p-2 hover:text-bright-yellow transition-all duration-300 ease-in">Services</a></li>
-                        <li><a href="#about" class="p-2 hover:text-bright-yellow transition-all duration-300 ease-in">About</a></li>
-                        <li><a href="#location" class="p-2 hover:text-bright-yellow transition-all duration-300 ease-in">Location</a></li>
-                        <li><a href="#contact" class="p-2 hover:text-bright-yellow transition-all duration-300 ease-in">Contact</a></li>
+                        <li class="navItem"><a href="#service" class="p-2 hover:text-bright-yellow transition-all duration-300 ease-in">Services</a></li>
+                        <li class="navItem"><a href="#about" class="p-2 hover:text-bright-yellow transition-all duration-300 ease-in">About</a></li>
+                        <li class="navItem"><a href="#location" class="p-2 hover:text-bright-yellow transition-all duration-300 ease-in">Location</a></li>
+                        <li class="navItem"><a href="#contact" class="p-2 hover:text-bright-yellow transition-all duration-300 ease-in">Contact</a></li>
                     </ul>
                 </div>
-                <div class="border-t border-bright-yellow px-4 sm:px-6 py-8 lg:border-none lg:px-0 lg:py-0">
+                <div class="border-t border-primary-red px-4 sm:px-6 py-8 lg:border-none lg:px-0 lg:py-0">
                     <ul class="flex flex-col lg:flex-row gap-4 lg:items-center">
-                        <li class="self-start"><a href="callto:+8801873065677" class="flex gap-2 items-center text-white lg:text-[#FF4136]">
-                            <div class="flex items-center justify-center">
+                        <li class="navItem self-start"><a href="callto:+8801873065677" class="flex gap-2 items-center text-white lg:text-[#FF4136]">
+                            <div class="flex items-center justify-center text-primary-red">
                                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentcolor"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg>
                             </div>
-                            <span>+8801873065677</span>
+                            <span class="text-primary-red">+8801873065677</span>
                         </a></li>
                     </ul>
                 </div>
             </div>
-            <div id="mobile-nav-toggle" aria-controls="primary-navigation" class="text-bright-yellow flex items-center justify-center h-[32px] cursor-pointer lg:hidden">
+            <div id="mobile-nav-toggle" aria-controls="primary-navigation" class="text-primary-red flex items-center justify-center h-[32px] cursor-pointer lg:hidden">
                 <svg class="h-full w-full" xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="currentcolor"><path d="M120-240v-66.67h520V-240H120Zm673.33-48L600.67-480.67l192-192L840-625.33 695.33-480.67l145.34 145.34L793.33-288ZM120-448v-66.67h400V-448H120Zm0-205.33V-720h520v66.67H120Z"/>
                 </svg>
             </div>
@@ -54,7 +55,7 @@
                 <a id="dot-2" class="w-2 h-2 bg-white rounded-full opacity-30 hover:opacity-100 transition-opacity ease-in duration-200" href="#slide-2"></a>
                 <a id="dot-3" class="w-2 h-2 bg-white rounded-full opacity-30 hover:opacity-100 transition-opacity ease-in duration-200" href="#slide-3"></a>
             </div>
-            <div class="basis-full lg:basis-1/2 w-full h-full absolute lg:static inset-0 bg-[linear-gradient(to_top,rgba(255,255,255,0.1),rgba(0,0,0,0.8))] overflow-x-hidden scroll-smooth">
+            <div class="basis-full lg:basis-[45%] w-full h-full absolute lg:static inset-0 bg-[linear-gradient(to_top,rgba(255,255,255,0.1),rgba(0,0,0,0.8))] overflow-x-hidden scroll-smooth">
                 <div class="flex h-svh -z-10 relative">
                     <div id="slide-1" class="grow shrink-0 basis-full slider overflow-y-auto">
                         <img class="w-full h-full object-cover object-center filter" src="./assets/images/hero/one.webp" alt="">
@@ -67,14 +68,14 @@
                     </div>
                 </div>
             </div>
-            <div class="lg:bg-bright-yellow basis-full lg:basis-1/2 max-w-screen-2xl mx-auto absolute lg:static inset-0 flex flex-col gap-8 items-start justify-center text-left px-4 md:px-8 lg:px-12 xl:px-16 drop-shadow-md">
+            <div class="lg:bg-bright-yellow basis-full lg:basis-[55%] max-w-screen-2xl mx-auto absolute lg:static inset-0 flex flex-col gap-8 items-start justify-center text-left px-4 md:px-8 lg:px-12 xl:px-16 drop-shadow-md">
                 <div class="flex flex-col gap-2 lg:gap-4 sm:max-w-[550px] md:max-w-[700px] lg:max-w-[800px]">
                     <div class="">
                         <h5 class="text-[#FF851B] text-xs lg:text-sm">
                             <span class="tracking-widest">Hi!</span>
                             <span>Welcome To</span>
                         </h5>
-                        <h1 class="text-2xl md:text-3xl lg:text-[43px] font-bold font-fontOne">
+                        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold font-fontOne">
                             <span class="text-white-smoke">Enam</span>
                             <span class="text-[#FF4136] drop-shadow-2xl [text-shadow:_0_2px_4px_rgb(255_231_24_/_0.4)]">Service Center</span>
                         </h1>
@@ -176,7 +177,7 @@
                     <div class="flex-1 bg-transparent px-4 py-4 flex flex-col gap-4 justify-between">
                         <p class=" text-xs 2xl:text-sm font-fontOne font-light tracking-wider text-left text-gray-700 ">Depending on the type of crack on the display, we provide tailored solutions, including glass replacement, touch replacement, or full display replacement.</p>
                         <button class="self-start">
-                            <a class="bg-bright-yellow hover:bg-second-bg hover:text-bright-yellow hover:border hover:border-bright-yellow hover:cursor-pointer relative z-50 px-8 py-[5px] rounded-sm text-sm font-fontOne font-bold transition-all duration-200 ease-in" href="#">Chat</a>
+                            <a class="bg-bright-yellow hover:bg-second-bg hover:text-bright-yellow hover:border hover:border-bright-yellow hover:cursor-pointer relative z-50 px-8 py-[5px] rounded-sm text-sm font-fontOne font-bold transition-all duration-200 ease-in" href="https://wa.me/+8801873065677">Chat</a>
                         </button>
                     </div>
                 </div>
@@ -208,7 +209,7 @@
                     <div class="flex-1 bg-transparent px-4 py-4 flex flex-col gap-4 justify-between">
                         <p class="text-xs 2xl:text-sm font-fontOne font-light tracking-wider text-left text-gray-700">If your battery doesn't provide expected backup, we offer original battery replacements and expert solutions for all battery-related issues with charging port.</p>
                         <button class="self-start">
-                            <a class="bg-bright-yellow hover:bg-second-bg hover:text-bright-yellow hover:border hover:border-bright-yellow hover:cursor-pointer relative z-50 px-8 py-[5px] rounded-sm text-sm font-fontOne font-bold transition-all duration-200 ease-in" href="#">Chat</a>
+                            <a class="bg-bright-yellow hover:bg-second-bg hover:text-bright-yellow hover:border hover:border-bright-yellow hover:cursor-pointer relative z-50 px-8 py-[5px] rounded-sm text-sm font-fontOne font-bold transition-all duration-200 ease-in" href="https://wa.me/+8801873065677">Chat</a>
                         </button>
                     </div>
                 </div>
@@ -224,7 +225,7 @@
                     <div class="flex-1 bg-transparent px-4 py-4 flex flex-col gap-4 justify-between">
                         <p class="text-xs 2xl:text-sm font-fontOne font-light tracking-wider text-left text-gray-700">We troubleshoot issues related to mobile phone microphones and speakers, providing effective solutions to ensure optimal audio performance.</p>
                         <button class="self-start">
-                            <a class="bg-bright-yellow hover:bg-second-bg hover:text-bright-yellow hover:border hover:border-bright-yellow hover:cursor-pointer relative z-50 px-8 py-[5px] rounded-sm text-sm font-fontOne font-bold transition-all duration-200 ease-in" href="#">Chat</a>
+                            <a class="bg-bright-yellow hover:bg-second-bg hover:text-bright-yellow hover:border hover:border-bright-yellow hover:cursor-pointer relative z-50 px-8 py-[5px] rounded-sm text-sm font-fontOne font-bold transition-all duration-200 ease-in" href="https://wa.me/+8801873065677">Chat</a>
                         </button>
                     </div>
                 </div>
@@ -240,7 +241,7 @@
                     <div class="flex-1 bg-transparent px-4 py-4 flex flex-col gap-4 justify-between">
                         <p class="text-xs 2xl:text-sm font-fontOne font-light tracking-wider text-left text-gray-700">If you're experiencing software-related issues such as unlocking phone, we're here to assist you in diagnosing and resolving the problem effectively.</p>
                         <button class="self-start">
-                            <a class="bg-bright-yellow hover:bg-second-bg hover:text-bright-yellow hover:border hover:border-bright-yellow hover:cursor-pointer relative z-50 px-8 py-[5px] rounded-sm text-sm font-fontOne font-bold transition-all duration-200 ease-in" href="#">Chat</a>
+                            <a class="bg-bright-yellow hover:bg-second-bg hover:text-bright-yellow hover:border hover:border-bright-yellow hover:cursor-pointer relative z-50 px-8 py-[5px] rounded-sm text-sm font-fontOne font-bold transition-all duration-200 ease-in" href="https://wa.me/+8801873065677">Chat</a>
                         </button>
                     </div>
                 </div>
@@ -256,7 +257,7 @@
                     <div class="flex-1 bg-transparent px-4 py-4 flex flex-col gap-4 justify-between">
                         <p class="text-xs 2xl:text-sm font-fontOne font-light tracking-wider text-left text-gray-700">We regularly solve various motherboard issues with our qualified engineers, ensuring reliable repairs to restore your device’s functionality.</p>
                         <button class="self-start">
-                            <a class="bg-bright-yellow hover:bg-second-bg hover:text-bright-yellow hover:border hover:border-bright-yellow hover:cursor-pointer relative z-50 px-8 py-[5px] rounded-sm text-sm font-fontOne font-bold transition-all duration-200 ease-in" href="#">Chat</a>
+                            <a class="bg-bright-yellow hover:bg-second-bg hover:text-bright-yellow hover:border hover:border-bright-yellow hover:cursor-pointer relative z-50 px-8 py-[5px] rounded-sm text-sm font-fontOne font-bold transition-all duration-200 ease-in" href="https://wa.me/+8801873065677">Chat</a>
                         </button>
                     </div>
                 </div>
@@ -272,7 +273,7 @@
                     <div class="flex-1 bg-transparent px-4 py-4 flex flex-col gap-4 justify-between">
                         <p class="text-xs 2xl:text-sm font-fontOne font-light tracking-wider text-left text-gray-700">We’re here to relieve you from network and Wi-Fi issues at a reasonable cost, ensuring seamless connectivity for your devices.</p>
                         <button class="self-start">
-                            <a class="bg-bright-yellow hover:bg-second-bg hover:text-bright-yellow hover:border hover:border-bright-yellow hover:cursor-pointer relative z-50 px-8 py-[5px] rounded-sm text-sm font-fontOne font-bold transition-all duration-200 ease-in" href="#">Chat</a>
+                            <a class="bg-bright-yellow hover:bg-second-bg hover:text-bright-yellow hover:border hover:border-bright-yellow hover:cursor-pointer relative z-50 px-8 py-[5px] rounded-sm text-sm font-fontOne font-bold transition-all duration-200 ease-in" href="https://wa.me/+8801873065677">Chat</a>
                         </button>
                     </div>
                 </div>
@@ -288,7 +289,7 @@
                     <div class="flex-1 bg-transparent px-4 py-4 flex flex-col gap-4 justify-between">
                         <p class="text-xs 2xl:text-sm font-fontOne font-light tracking-wider text-left text-gray-700">If you encounter any issues with your mobile phone, feel free to visit our shops anytime for assistance and support. There can be a lot!</p>
                         <button class="self-start">
-                            <a class="bg-bright-yellow hover:bg-second-bg hover:text-bright-yellow hover:border hover:border-bright-yellow hover:cursor-pointer relative z-50 px-8 py-[5px] rounded-sm text-sm font-fontOne font-bold transition-all duration-200 ease-in" href="#">Chat</a>
+                            <a class="bg-bright-yellow hover:bg-second-bg hover:text-bright-yellow hover:border hover:border-bright-yellow hover:cursor-pointer relative z-50 px-8 py-[5px] rounded-sm text-sm font-fontOne font-bold transition-all duration-200 ease-in" href="https://wa.me/+8801873065677">Chat</a>
                         </button>
                     </div>
                 </div>
@@ -298,7 +299,7 @@
     <!-- service end -->
 
     <!-- about start -->
-    <section id="about" class="mt-[2rem] flex flex-col gap-8">
+    <section id="about" class="mt-[2rem] flex flex-col gap-8 scroll-mt-[70px]">
         <h3 class="text-center text-primary-red text-2xl md:text-3xl lg:text-4xl font-fontOne font-medium uppercase">About <span class="text-second-bg">Us</span></h3>
         <div class="relative bg-gradient-to-r from-[rgba(255,255,255,0.1)] to-[rgba(34,41,49,0.9)]">
             <div class="absolute -z-10 left-0 right-0 top-0 bottom-0">
@@ -313,7 +314,7 @@
                             <p class="text-sm text-gray-300 pt-2 font-light tracking-wider">Established in 2017, Enam Mobile Service Center is your trusted mobile repair shop. We have five highly qualified hardware engineers and one software engineer. Additionally, we offer the latest accessories such as headsets, Bluetooth headphones, screen protectors, and phone covers. We are well known for our fast service and excellent communication. We always consider customer costs and consistently maintain our quality.</p>
                         </div>
                     </div>
-                    <button><a class="px-[8px] py-[5px] md:px-[10px] md:py-[6px] text-xs md:text-sm lg:text-base font-fontOne font-medium text-bright-yellow bg-second-bg transition-all duration-300 ease-in rounded-sm hover:bg-bright-yellow hover:text-second-bg" href="#" href="">Get in Touch</a></button>
+                    <button><a class="px-[8px] py-[5px] md:px-[10px] md:py-[6px] text-xs md:text-sm lg:text-base font-fontOne font-medium text-bright-yellow bg-second-bg transition-all duration-300 ease-in rounded-sm hover:bg-bright-yellow hover:text-second-bg" href="https://wa.me/+8801873065677" href="">Get in Touch</a></button>
                 </div>
                 <div class="flex-1 min-w-[300px] py-6 bg-[rgba(255,255,255,0.7)]">
                     <ul class="h-full list-[square] px-8 flex flex-col gap-2 justify-between font-fontOne text-sm lg:text-base text-second-bg tracking-wider font-light">
@@ -328,7 +329,7 @@
     <!-- About end -->
 
     <!-- location start -->
-     <section id="location" class="bg-white pb-12">
+     <section id="location" class="bg-white pb-12 scroll-mt-12">
         <div class="py-8 max-w-screen-2xl mx-auto px-4 md:px-8 lg:px-12 xl:px-16">
             <h3 class=" text-primary-red text-2xl md:text-3xl lg:text-4xl font-fontOne font-medium uppercase">Location</h3>
         </div>
