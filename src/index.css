@@ -1,0 +1,244 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Bright and Welcoming Mobile Service Center Design System */
+
+@layer base {
+  :root {
+    /* Light, welcoming color palette */
+    --background: 210 100% 98%;
+    --foreground: 222 47% 11%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    /* Vibrant primary - modern tech blue */
+    --primary: 214 84% 56%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 214 84% 70%;
+
+    /* Warm secondary - friendly orange */
+    --secondary: 24 95% 53%;
+    --secondary-foreground: 0 0% 100%;
+
+    /* Light accents */
+    --muted: 210 60% 98%;
+    --muted-foreground: 222 20% 55%;
+
+    --accent: 174 72% 56%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Success green for trust */
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 214 84% 56%;
+
+    --radius: 0.75rem;
+
+    /* Beautiful gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(214 84% 56%), hsl(214 84% 70%));
+    --gradient-secondary: linear-gradient(135deg, hsl(24 95% 53%), hsl(24 95% 65%));
+    --gradient-accent: linear-gradient(135deg, hsl(174 72% 56%), hsl(174 72% 70%));
+    --gradient-hero: linear-gradient(135deg, hsl(214 84% 56%) 0%, hsl(174 72% 56%) 100%);
+    
+    /* Soft shadows with color */
+    --shadow-primary: 0 10px 30px -10px hsl(214 84% 56% / 0.3);
+    --shadow-secondary: 0 10px 30px -10px hsl(24 95% 53% / 0.3);
+    --shadow-soft: 0 4px 20px -4px hsl(214 84% 56% / 0.1);
+    
+    /* Smooth transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .dark {
+    --background: 222 84% 5%;
+    --foreground: 210 40% 98%;
+
+    --card: 222 84% 6%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222 84% 6%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 214 84% 70%;
+    --primary-foreground: 222 47% 11%;
+    --primary-glow: 214 84% 80%;
+
+    --secondary: 24 95% 65%;
+    --secondary-foreground: 222 47% 11%;
+
+    --muted: 217 33% 18%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 174 72% 70%;
+    --accent-foreground: 222 47% 11%;
+
+    --success: 142 71% 55%;
+    --success-foreground: 222 47% 11%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217 33% 18%;
+    --input: 217 33% 18%;
+    --ring: 214 84% 70%;
+
+    /* Dark mode gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(214 84% 70%), hsl(214 84% 80%));
+    --gradient-secondary: linear-gradient(135deg, hsl(24 95% 65%), hsl(24 95% 75%));
+    --gradient-accent: linear-gradient(135deg, hsl(174 72% 70%), hsl(174 72% 80%));
+    --gradient-hero: linear-gradient(135deg, hsl(214 84% 70%) 0%, hsl(174 72% 70%) 100%);
+    
+    --shadow-primary: 0 10px 30px -10px hsl(214 84% 70% / 0.3);
+    --shadow-secondary: 0 10px 30px -10px hsl(24 95% 65% / 0.3);
+    --shadow-soft: 0 4px 20px -4px hsl(214 84% 70% / 0.2);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  /* Hero section animations */
+  .hero-animate {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  .hero-phone {
+    animation: phone-glow 4s ease-in-out infinite alternate;
+  }
+
+  /* Service card hover effects */
+  .service-card {
+    @apply transition-all duration-300 hover:scale-105 hover:shadow-lg;
+    background: linear-gradient(135deg, rgba(255,255,255,0.9), rgba(255,255,255,0.6));
+    backdrop-filter: blur(10px);
+  }
+
+  .service-card:hover {
+    box-shadow: var(--shadow-primary);
+  }
+
+  /* Floating animations */
+  .float-animation {
+    animation: float-gentle 3s ease-in-out infinite;
+  }
+
+  /* Gradient text */
+  .gradient-text {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Glowing buttons */
+  .btn-glow {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .btn-glow::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+    transition: left 0.5s;
+  }
+
+  .btn-glow:hover::before {
+    left: 100%;
+  }
+}
+
+@layer utilities {
+  /* Animation keyframes */
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+  }
+
+  @keyframes phone-glow {
+    0% { 
+      filter: drop-shadow(0 0 20px hsl(214 84% 56% / 0.5));
+      transform: scale(1);
+    }
+    100% { 
+      filter: drop-shadow(0 0 30px hsl(174 72% 56% / 0.7));
+      transform: scale(1.02);
+    }
+  }
+
+  @keyframes float-gentle {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-10px) rotate(1deg); }
+  }
+
+  @keyframes slide-up {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes scale-in {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  /* Utility classes */
+  .animate-slide-up {
+    animation: slide-up 0.6s ease-out;
+  }
+
+  .animate-scale-in {
+    animation: scale-in 0.5s ease-out;
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-phone-glow {
+    animation: phone-glow 4s ease-in-out infinite alternate;
+  }
+
+  .animate-float-gentle {
+    animation: float-gentle 3s ease-in-out infinite;
+  }
+}
